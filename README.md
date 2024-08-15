@@ -7,3 +7,4 @@ Enhance your app with CRUD functionalities through Server Actions, improve user 
 Conclude the course with the skills to deploy your NextJS app on Vercel, and incorporate features such as prompt handling, response management, and image generation.
 
 This course offers a practical approach, including numerous challenges to apply what you've learned. Transform your web development skills and gain the confidence to create sophisticated web applications.
+# Home-away-project
