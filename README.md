@@ -1,36 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Start your path to becoming a proficient web developer with our detailed video course on building apps using Next JS 14. Designed specifically for beginners and intermediate developers, this course will help you develop high-level skills. Begin by creating a Next.js application from scratch, understanding its structure, and mastering advanced routing techniques, including link components and dynamic paths.
 
-## Getting Started
+Delve into front-end design using TailwindCSS and Shadcn/ui, mastering responsive design, theme management, and consistent styling with layout components. Learn the fundamentals of backend development, including the distinctions between server and client components, how to fetch data, manage loading states, and implement error handling along with nested layouts.
 
-First, run the development server:
+Enhance your app with CRUD functionalities through Server Actions, improve user interaction, and ensure data integrity with the Zod library. You will also integrate a database using Supabase, handle image uploads, and implement crucial functionalities like authentication with CLERK Service.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Conclude the course with the skills to deploy your NextJS app on Vercel, and incorporate features such as prompt handling, response management, and image generation.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This course offers a practical approach, including numerous challenges to apply what you've learned. Transform your web development skills and gain the confidence to create sophisticated web applications.
