@@ -1,13 +1,36 @@
-import { Button } from '@/components/ui/button';
 
-function HomePage() {
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs'
+import './globals.css'
+
+function HomePage({children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <div>
-      <h1 className='text-3xl'>HomePage</h1>
-      <Button variant='outline' size='lg' className='capitalize m-8'>
-        Click me
-      </Button>
-    </div>
-  );
+    <ClerkProvider>
+      <html lang="en">
+        <body>
+          <SignedOut>
+            <SignInButton />
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
+  )
 }
 export default HomePage;
+
+
+
+
+  
