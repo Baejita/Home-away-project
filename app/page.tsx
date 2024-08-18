@@ -1,11 +1,5 @@
 
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
-} from '@clerk/nextjs'
+import React from 'react';
 import './globals.css'
 
 function HomePage({children,
