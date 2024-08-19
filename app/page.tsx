@@ -1,6 +1,7 @@
 
 import React from 'react';
 import './globals.css'
+import { SignOutButton } from '@clerk/nextjs';
 
 function HomePage({children,
 }: {
@@ -11,7 +12,9 @@ function HomePage({children,
       <html lang="en">
         <body>
           
-          {children}
+        {children}
+        
+
         </body>
       </html>
     
