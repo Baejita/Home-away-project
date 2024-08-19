@@ -1,7 +1,6 @@
 
 import React from 'react';
 import './globals.css'
-import { SignOutButton } from '@clerk/nextjs';
 
 function HomePage({children,
 }: {

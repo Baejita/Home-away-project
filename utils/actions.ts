@@ -53,3 +53,54 @@ export const fetchProfileImage = async () => {
 
   return profile?.profileImage;
 }
+
+
+const getAuthUser = async () => {
+  const user = await currentUser();
+  if (!user) {
+    throw new Error('You must be logged in to access this route');
+  }
+  if (!user.privateMetadata.hasProfile) redirect('/profile/create');
+  return user;
+};
+
+export const fetchProfile = async () => {
+  const user = await getAuthUser();
+
+  const profile = await db.profile.findUnique({
+    where: {
+      clerkId: user.id,
+    },
+  });
+  if (!profile) return redirect('/profile/create');
+  return profile;
+};
+
+
+
+
+
+export const updateProfileAction = async (
+  prevState: any,
+  formData: FormData
+): Promise<{ message: string }> => {
+  const user = await getAuthUser();
+  try {
+    const rawData = Object.fromEntries(formData);
+
+    const validatedFields = profileSchema.parse(rawData);
+
+    await db.profile.update({
+      where: {
+        clerkId: user.id,
+      },
+      data: validatedFields,
+    });
+    revalidatePath('/profile');
+    return { message: 'Profile updated successfully' };
+  } catch (error) {
+    return {
+      message: error instanceof Error ? error.message : 'An error occurred',
+    };
+  }
+};
