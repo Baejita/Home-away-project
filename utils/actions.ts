@@ -143,3 +143,17 @@ export const updateProfileImageAction = async (
     return renderError(error);
    }
 };
+
+export const createPropertyAction = async (
+  prevState: any,
+  formData: FormData
+): Promise<{ message: string }> => {
+  const user = await getAuthUser();
+  try {
+    const rawData = Object.fromEntries(formData);
+    const validatedFields = validateWithZodSchema(propertySchema, rawData);
+  } catch (error) {
+    return renderError(error);
+  }
+  redirect('/');
+};
