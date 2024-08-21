@@ -26,7 +26,7 @@ export default function RootLayout({
           <Providers>
            
             <Navbar />
-           <SignOutButton />
+           
             <main className='container py-10'>{children}</main>
           </Providers>
         </body>
